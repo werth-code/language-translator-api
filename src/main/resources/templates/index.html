@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Translator</title>
+</head>
+<body>
+
+<main>
+
+    <form method="POST" th:action="@{/translate}" enctype="text/plain">
+        <div class="form-group mt-3">
+            <label for="file">Text To Translate</label>
+            <input type="text" name="file" class="form-control-file" id="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Translate</button>
+    </form>
+
+</main>
+
+</body>
+</html>

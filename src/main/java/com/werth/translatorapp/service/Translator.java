@@ -1,4 +1,4 @@
-package com.werth.translatorapp.model;
+package com.werth.translatorapp.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
