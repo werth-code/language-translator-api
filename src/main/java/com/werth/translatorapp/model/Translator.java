@@ -12,9 +12,10 @@ public class Translator {
     //` String url = "script.google.com/macros/s/AKf****xhI/exec?q=" + URLEncoder.encode(text, "UTF-8") + "&target=" + this.to + "&source=" + this.from; String translatedText = restTemplate.getForObject(url, String.class);`
 
     public static void main(String[] args) throws IOException {
-        String text = "Hello world!";
-        //Translated text: Hallo Welt!
-        System.out.println("Translated text: " + translate("en", "ga", text));
+        String text = "\nWhoever dwells in the shelter of the Most High will rest in the shadow of the Almighty." +
+                " 2 I will say of the Lord, “He is my refuge and my fortress, my God, in whom I trust.";
+
+        System.out.println("English Text: " + text + "\n" + "\nTranslated Text: \n" + translate("en", "es", text));
     }
 
     private static String translate(String langFrom, String langTo, String text) throws IOException {
